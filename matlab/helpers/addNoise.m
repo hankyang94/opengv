@@ -1,6 +1,7 @@
 function v_noisy = addNoise(v_clean,focal_length,pixel_noise)
 
     %find good vector in normal plane based on good conditioning
+    %this inPlaneVector1 is perpendicular to v_clean
     inPlaneVector1 = zeros(3,1);
     
     if v_clean(1,1) > v_clean(2,1) && v_clean(1,1) > v_clean(3,1)
