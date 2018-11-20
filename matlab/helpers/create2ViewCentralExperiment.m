@@ -55,10 +55,10 @@ end
 % points = (maxDepth-minDepth) * normalizedPoints + minDepth * directions;
 
 if debug
-    disp('points')
-    disp(points)
-    disp('points in c2')
-    disp(points_c2)
+%     disp('points')
+%     disp(points)
+%     disp('points in c2')
+%     disp(points_c2)
     figure
     scatter3(points(1,:), points(2,:), points(3,:), 'red', 'filled')
     hold on
@@ -73,9 +73,9 @@ if debug
     
     c2_coords = [0.5,0,0;0,0.5,0;0,0,0.5];
     c2_coords_in_c1 = pose_c2_c1 * [c2_coords;1,1,1];
-    disp(c2_coords)
-    disp(c2_coords_in_c1)
-    disp(position2)
+%     disp(c2_coords)
+%     disp(c2_coords_in_c1)
+%     disp(position2)
     scatter3(position2(1), position2(2), position2(3), 'black', '*')
     quiver3(position2(1), position2(2), position2(3), ...
     c2_coords_in_c1(1,1)-position2(1), ...
