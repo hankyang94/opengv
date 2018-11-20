@@ -151,7 +151,7 @@ number_outliers = floor(outlier_fraction*pt_number);
 if number_outliers > 0
     for i=1:number_outliers
 
-        cam_correspondence = cam_correspondences(1,i);
+        cam_correspondence = 1;
 
         cam_offset = cam_offsets(:,cam_correspondence);
         %cam_rotation = cam_rotations(:,(cam_correspondence-1)*3+1:(cam_correspondence-1)*3+3);
